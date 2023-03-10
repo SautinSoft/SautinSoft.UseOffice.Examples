@@ -1,5 +1,7 @@
 [UseOffice .Net by SautinSoft](https://sautinsoft.com/products/useoffice/) is a robust .NET component to convert between DOC, DOCX, XLS, RTF, PPT, PDF and HTML formats with tables, images, fonts, colors etc. Our component is just a class library, it requires Microsoft Office installed. You can install any version of MS Office from: 2000, XP, 2003, 2007, 2010, 2013, 2016 or 2019.
 
+<img src="https://www.sautinsoft.com/media/github/u.png" alt="SautinSoft.UseOffice" align="left" />
+
 This repository contains [Examples for UseOffice .Net](https://sautinsoft.com/products/useoffice/examples) to help you learn and write your own applications.
 
 <p align="center">
