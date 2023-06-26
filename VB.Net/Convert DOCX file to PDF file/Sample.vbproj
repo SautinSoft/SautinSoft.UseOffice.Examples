@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+  <PackageId>UseOffice .Net</PackageId>
+  <Authors>Max Sautin</Authors>
+  <Company>SautinSoft</Company>
+  <OutputType>Exe</OutputType>
+  <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+ <Choose>
+ <!-- Need to conditionally bring in references for the .NET 6.0 target -->
+  <When Condition="Exists('..\..\..\Bin\.NET 6.0\UseOffice.dll')">
+   <ItemGroup>
+    <Reference Include="SautinSoft.UseOffice">
+    <HintPath>..\..\..\Bin\.NET 6.0\UseOffice.dll</HintPath>
+    </Reference>
+	</ItemGroup>
+  </When>
+    <!-- Need to conditionally bring in references for the NuGet target -->
+  <When Condition="'Nuget'=='Nuget'">
+   <ItemGroup>
+    <PackageReference Include="SautinSoft.UseOffice" Version="*" />
+   </ItemGroup>
+  </When>
+ </Choose>
+</Project>

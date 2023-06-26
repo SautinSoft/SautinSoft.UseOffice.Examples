@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASP.Net - Convert Word Excel PowerPoint to PDF files", ".", "{9ADC096C-CD7F-40D9-8F11-120023EAEA8E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/ASP.Net - Convert Word Excel PowerPoint to PDF files"
+		Debug.AspNetCompiler.PhysicalPath = "..\ASP.Net - Convert Word Excel PowerPoint to PDF files\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ASP.Net - Convert Word Excel PowerPoint to PDF files\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ASP.Net - Convert Word Excel PowerPoint to PDF files"
+		Release.AspNetCompiler.PhysicalPath = "..\ASP.Net - Convert Word Excel PowerPoint to PDF files\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ASP.Net - Convert Word Excel PowerPoint to PDF files\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49288"
+		SlnRelativePath = "..\ASP.Net - Convert Word Excel PowerPoint to PDF files\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ADC096C-CD7F-40D9-8F11-120023EAEA8E}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{9ADC096C-CD7F-40D9-8F11-120023EAEA8E}.Debug|.NET.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD82C19E-73C6-4596-8C51-D3A25605092E}
+	EndGlobalSection
+EndGlobal

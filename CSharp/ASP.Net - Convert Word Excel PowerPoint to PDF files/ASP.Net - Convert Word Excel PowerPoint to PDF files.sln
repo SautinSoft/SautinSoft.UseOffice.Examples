@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASP.Net - Convert Word Excel PowerPoint to PDF files", ".", "{58B44E19-29D1-44BE-8B7A-BF0C4413FBED}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/ASP.Net - Convert Word Excel PowerPoint to PDF files"
+		Debug.AspNetCompiler.PhysicalPath = "..\ASP.Net - Convert Word Excel PowerPoint to PDF files\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ASP.Net - Convert Word Excel PowerPoint to PDF files\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ASP.Net - Convert Word Excel PowerPoint to PDF files"
+		Release.AspNetCompiler.PhysicalPath = "..\ASP.Net - Convert Word Excel PowerPoint to PDF files\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ASP.Net - Convert Word Excel PowerPoint to PDF files\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52280"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58B44E19-29D1-44BE-8B7A-BF0C4413FBED}.Debug|.NET.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
