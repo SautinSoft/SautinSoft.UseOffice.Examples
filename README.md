@@ -1,25 +1,66 @@
-[UseOffice .Net by SautinSoft](https://sautinsoft.com/products/useoffice/) is a robust .NET component to convert between DOC, DOCX, XLS, RTF, PPT, PDF and HTML formats with tables, images, fonts, colors etc. Our component is just a class library, it requires Microsoft Office installed. You can install any version of MS Office from: 2000, XP, 2003, 2007, 2010, 2013, 2016 or 2019.
+![Nuget](https://img.shields.io/nuget/v/sautinsoft.useoffice) ![Nuget](https://img.shields.io/nuget/dt/sautinsoft.useoffice) 
+# .NET SDK to convert between Word, Excel, PowerPoint and PDF formats.
 
-<img src="https://www.sautinsoft.com/media/github/u.png" alt="SautinSoft.UseOffice" align="left" />
+![SautinSoft.useoffice](https://camo.githubusercontent.com/fafb859183d8aa71e0453c5073e5a503da19aa080f26b09f4423ef45e511d342/68747470733a2f2f7777772e73617574696e736f66742e636f6d2f6d656469612f6769746875622f752e706e67)
 
-This repository contains [Examples for UseOffice .Net](https://sautinsoft.com/products/useoffice/examples) to help you learn and write your own applications.
+[SautinSoft.useoffice](https://sautinsoft.com/products/useoffice/) is .NET assembly to convert between Word, Excel, PowerPoint and PDF formats.
 
-<p align="center">
+DOCX to PDF
+XLSX to PDF
+PPTX to PDF
 
-  <a title="Download complete UseOffice .Net" href="https://sautinsoft.com/thankyou.php?download=useoffice_net.zip">
-	<img src="https://sautinsoft.com/images/zip_file_download.png" />
-  </a>
-</p>
+Support for all MS Office formats.
 
-Directory | Description
---------- | -----------
-[Examples for UseOffice .Net](https://sautinsoft.com/products/useoffice/examples/) | A collection of C#, VB.NET, php examples that help you learn and explore the API features
+## Quick links
 
++ [Developer Guide](https://sautinsoft.com/products/useoffice/examples/)
++ [API Reference](https://sautinsoft.net/help/convert-rtf-html-doc-docx-xls-xlsx-ppt-pptx-to-pdf-net-library/html/N_SautinSoft.htm)
+
+## Top Features
+
++ [Convert DOCX file to PDF file.](https://sautinsoft.com/products/useoffice/examples/convert-docx-to-pdf-csharp-vb-net.php)
++ [Convert XLSX file to PDF file.](https://sautinsoft.com/products/useoffice/examples/convert-xlsx-to-pdf-csharp-vb-net.php)
++ [Convert RTF file to PDF file.](https://sautinsoft.com/products/useoffice/examples/convert-rtf-to-pdf-csharp-vb-net.php)
++ [Convert PPTX file to PDF file.](https://sautinsoft.com/products/useoffice/examples/convert-pptx-to-pdf-csharp-vb-net.php)
+
+## System Requirement
+
+* .NET Framework 4.6.1 - 4.8
+* .NET Core 2.0 - 3.1, .NET 5, 6, 7, 8
+* .NET Standard 2.0
+* Windows only
+
+## Getting Started with UseOffice .Net
+
+Are you ready to give UseOffice .NET a try? Simply execute `Install-Package sautinsoft.useoffice` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have UseOffice .NET and want to upgrade the version, please execute `Update-Package sautinsoft.useoffice` to get the latest version.
+
+## Convert DOCX to PDF
+
+```csharp
+SautinSoft.UseOffice u = new SautinSoft.UseOffice();
+string inpFile = Path.GetFullPath(@"..\..\example.docx");
+string outFile = Path.GetFullPath("Result.pdf");
+int ret = u.InitWord();
+ret = u.ConvertFile(inpFile, outFile, SautinSoft.UseOffice.eDirection.DOCX_to_PDF);
+u.CloseWord();
+```
+## Convert XLSX to PDF
+
+```csharp
+SautinSoft.UseOffice u = new SautinSoft.UseOffice();
+string inpFile = Path.GetFullPath(@"..\..\example.xlsx");
+string outFile = Path.GetFullPath("Result.pdf");
+int ret = u.InitExcel();
+ret = u.ConvertFile(inpFile, outFile, SautinSoft.UseOffice.eDirection.XSLX_to_PDF);
+u.CloseExcel();
+```
 
 ## Resources
 
-+ **Website:** [www.sautinsoft.com](http://www.sautinsoft.com)
++ **Website:** [www.sautinsoft.com](https://www.sautinsoft.com)
 + **Product Home:** [UseOffice .Net](https://sautinsoft.com/products/useoffice/)
-+ **Download:** [Download UseOffice .Net](https://sautinsoft.com/products/useoffice/download.php)
-+ **Documentation:** [UseOffice .Net Documentation API](https://sautinsoft.net/help/convert-rtf-html-doc-docx-xls-xlsx-ppt-pptx-to-pdf-net-library/Index.html)
-+ **Support:** [You are always welcome at SautinSoft company with your feedback and questions, it helps us to work more effective!](https://sautinsoft.com/support.php)
++ [Download SautinSoft.UseOffice](https://sautinsoft.com/products/useoffice/download.php)
++ [Developer Guide](https://sautinsoft.com/products/useoffice/examples/)
++ [API Reference](https://sautinsoft.net/help/convert-rtf-html-doc-docx-xls-xlsx-ppt-pptx-to-pdf-net-library/html/N_SautinSoft.htm)
++ [Support Team](https://sautinsoft.com/support.php)
++ [License](https://sautinsoft.net/help/convert-rtf-html-doc-docx-xls-xlsx-ppt-pptx-to-pdf-net-library/html/license.htm)
