@@ -11,7 +11,7 @@ Namespace Sample
 
             Dim u As New SautinSoft.UseOffice()
 
-            Dim inpFile As String = Path.GetFullPath("..\..\..\..\TestFiles\example.xls")
+            Dim inpFile As String = Path.GetFullPath("..\..\..\..\..\..\TestFiles\example.xls")
             Dim outFile As String = Path.GetFullPath("Result.csv")
 
             ' Prepare UseOffice .Net, loads MS Excel in memory

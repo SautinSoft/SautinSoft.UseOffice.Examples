@@ -11,7 +11,7 @@ Namespace Sample
 
             Dim u As New SautinSoft.UseOffice()
 
-            Dim inpFile As String = Path.GetFullPath("..\..\..\..\TestFiles\example.html")
+            Dim inpFile As String = Path.GetFullPath("..\..\..\..\..\..\TestFiles\example.html")
             Dim outFile As String = Path.GetFullPath("Result.pdf")
 
             ' Prepare UseOffice .Net, loads MS Word in memory

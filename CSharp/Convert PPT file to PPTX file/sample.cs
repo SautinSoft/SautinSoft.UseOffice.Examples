@@ -13,7 +13,7 @@ namespace Sample
             // support@sautinsoft.com.
             SautinSoft.UseOffice u = new SautinSoft.UseOffice();
 
-            string inpFile = Path.GetFullPath(@"..\..\..\..\..\TestFiles\example.ppt");
+            string inpFile = Path.GetFullPath(@"..\..\..\..\..\..\TestFiles\example.ppt");
             string outFile = Path.GetFullPath(@"Result.pptx");
 
             // Prepare UseOffice .Net, loads MS PowerPoint in memory

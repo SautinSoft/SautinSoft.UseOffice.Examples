@@ -15,7 +15,7 @@ namespace Sample
             SautinSoft.UseOffice u = new SautinSoft.UseOffice();
 
             // We need files to read data from it and demostrate the result of conversion.
-            string inpFile = Path.GetFullPath(@"..\..\..\..\..\TestFiles\example.docx");
+            string inpFile = Path.GetFullPath(@"..\..\..\..\..\..\TestFiles\example.docx");
             string outFile = Path.GetFullPath("Result.pdf");
 
             // Prepare UseOffice .Net, loads MS Word in memory

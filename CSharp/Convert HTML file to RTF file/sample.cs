@@ -14,7 +14,7 @@ namespace Sample
 
             SautinSoft.UseOffice u = new SautinSoft.UseOffice();
 
-            string inpFile = Path.GetFullPath(@"..\..\..\..\..\TestFiles\example.html");
+            string inpFile = Path.GetFullPath(@"..\..\..\..\..\..\TestFiles\example.html");
             string outFile = Path.GetFullPath("Result.rtf");
 
             // Prepare UseOffice .Net, loads MS Word in memory

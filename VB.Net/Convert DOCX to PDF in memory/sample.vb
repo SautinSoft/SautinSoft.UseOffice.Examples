@@ -12,7 +12,7 @@ Namespace Sample
             Dim u As New SautinSoft.UseOffice()
 
             ' We need files to read data from it and demostrate the result of conversion.
-            Dim inpFile As String = Path.GetFullPath("..\..\..\..\TestFiles\example.docx")
+            Dim inpFile As String = Path.GetFullPath("..\..\..\..\..\..\TestFiles\example.docx")
             Dim outFile As String = Path.GetFullPath("Result.pdf")
 
             ' Prepare UseOffice .Net, loads MS Word in memory

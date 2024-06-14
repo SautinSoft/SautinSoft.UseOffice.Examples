@@ -10,7 +10,7 @@ Namespace Sample
             ' support@sautinsoft.com.
             Dim u As New SautinSoft.UseOffice()
 
-            Dim inpFile As String = Path.GetFullPath("..\..\..\..\TestFiles\example.ppt")
+            Dim inpFile As String = Path.GetFullPath("..\..\..\..\..\..\TestFiles\example.ppt")
             Dim outFile As String = Path.GetFullPath("Result.pptx")
 
             ' Prepare UseOffice .Net, loads MS PowerPoint in memory

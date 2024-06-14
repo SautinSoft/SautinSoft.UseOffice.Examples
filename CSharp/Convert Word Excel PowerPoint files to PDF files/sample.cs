@@ -15,7 +15,7 @@ namespace Sample
             SautinSoft.UseOffice u = new SautinSoft.UseOffice();
 
             // The directory which contains Word, Excel, PowerPoint files: *.doc, *.docx, *.rtf, *.txt, *.xls, *.xlsx, *.csv, *.ppt, *.pptx
-            string directoryWithFiles = Path.GetFullPath(@"..\..\..\..\..\TestFiles\");
+            string directoryWithFiles = Path.GetFullPath(@"..\..\..\..\..\..\TestFiles\");
 
             //Prepare UseOffice .Net, loads MS Word, Excel, PowerPoint into memory
             int ret = u.InitOffice();

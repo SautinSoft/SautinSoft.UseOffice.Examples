@@ -14,7 +14,7 @@ namespace Sample
 
 			SautinSoft.UseOffice u = new SautinSoft.UseOffice();
 
-			string inpFile = Path.GetFullPath(@"..\..\..\..\..\TestFiles\example.xlsx");			
+			string inpFile = Path.GetFullPath(@"..\..\..\..\..\..\TestFiles\example.xlsx");			
 			string outFile = Path.GetFullPath("Result.pdf");
 
 			// Prepare UseOffice .Net, load MS Excel in memory.

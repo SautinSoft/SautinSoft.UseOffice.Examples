@@ -8,7 +8,7 @@ Namespace Sample
         Shared Sub Main(ByVal args() As String)
 
             ' Activate your license here
-            SautinSoft.UseOffice.SetLicense("1234567890")
+              SautinSoft.UseOffice.SetLicense("1234567890")
 
             ' Place your serial(s) number.
             ' You will get own serial number(s) after purchasing the license.
@@ -18,7 +18,7 @@ Namespace Sample
             Dim u As New SautinSoft.UseOffice()
 
 
-            Dim inpFile As String = Path.GetFullPath("..\..\..\..\TestFiles\example.docx")
+            Dim inpFile As String = Path.GetFullPath("..\..\..\..\..\..\TestFiles\example.docx")
             Dim outFile As String = Path.GetFullPath("Result.pdf")
 
             ' Prepare UseOffice .Net, loads MS Word in memory
