@@ -1,7 +1,8 @@
 ![Nuget](https://img.shields.io/nuget/v/sautinsoft.useoffice) ![Nuget](https://img.shields.io/nuget/dt/sautinsoft.useoffice) 
 # .NET SDK to convert between Word, Excel, PowerPoint and PDF formats.
 
-![SautinSoft.useoffice](https://camo.githubusercontent.com/fafb859183d8aa71e0453c5073e5a503da19aa080f26b09f4423ef45e511d342/68747470733a2f2f7777772e73617574696e736f66742e636f6d2f6d656469612f6769746875622f752e706e67)
+![useoffice-logo](https://github.com/SautinSoft/SautinSoft.UseOffice.Examples/assets/79837963/faa624bd-f065-477f-abf8-0f651fa9c6d2)
+
 
 [SautinSoft.useoffice](https://sautinsoft.com/products/useoffice/) is .NET assembly to convert between Word, Excel, PowerPoint and PDF formats.
 
