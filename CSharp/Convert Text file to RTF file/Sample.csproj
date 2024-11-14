@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+  <PackageId>UseOffice .Net</PackageId>
+  <Authors>Max Sautin</Authors>
+  <Company>SautinSoft</Company>
+  <OutputType>Exe</OutputType>
+  <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+   <ItemGroup>
+    <PackageReference Include="SautinSoft.UseOffice" Version="*" />
+   </ItemGroup>
+  </Project>
