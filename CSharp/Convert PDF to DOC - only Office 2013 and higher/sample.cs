@@ -9,6 +9,12 @@ namespace Sample
     {
         static void Main(string[] args)
         {
+			// Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+			// UseOffice.SetLicense("...");
+			
             // Convert PDF file to DOC file. Works only in Office 2013 and higher.
             
             // If you are looking for solution without MS Office

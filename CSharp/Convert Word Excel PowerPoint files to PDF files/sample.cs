@@ -9,6 +9,12 @@ namespace Sample
 
         static void Main(string[] args)
         {
+			// Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+			// UseOffice.SetLicense("...");
+			
             // Convert Word Excel PowerPoint documents to PDF format.
             // If you need more information about UseOffice .Net email us at:
             // support@sautinsoft.com.

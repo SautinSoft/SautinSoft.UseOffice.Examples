@@ -10,8 +10,12 @@ namespace Sample
         static void Main(string[] args)
         {
 
-            // Activate your license here
-            SautinSoft.UseOffice.SetLicense("1234567890");
+            // Before starting, we recommend to get a free 100-day key:
+            // https://sautinsoft.com/start-for-free/
+            
+            // Apply the key here:
+			// UseOffice.SetLicense("...");
+
 
             // Place your serial(s) number.
             // You will get own serial number(s) after purchasing the license.

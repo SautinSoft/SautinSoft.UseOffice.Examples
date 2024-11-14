@@ -6,6 +6,12 @@ Imports SautinSoft
 Namespace Sample
     Friend Class Test
         Shared Sub Main(ByVal args() As String)
+		
+			' Before starting, we recommend to get a free 100-day key:
+            ' https://sautinsoft.com/start-for-free/
+            
+            ' Apply the key here:
+			' UseOffice.SetLicense("...");
             ' Convert PDF file to Text file. Works only in Office 2013 and higher.
 
             ' If you are looking for solution without MS Office
