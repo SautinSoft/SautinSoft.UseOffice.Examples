@@ -1,4 +1,3 @@
-
 Imports System
 Imports System.Data
 Imports System.Configuration
@@ -12,24 +11,26 @@ Imports System.IO
 Imports System.Drawing
 
 Partial Public Class _Default
-    Inherits System.Web.UI.Page
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
+	Inherits System.Web.UI.Page
+
+	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 		If Not IsPostBack Then
 			convDir.DataSource = System.Enum.GetNames(GetType(SautinSoft.UseOffice.eDirection))
 			convDir.DataBind()
 		End If
 		resultMessage.Text = ""
 		fileMessage.Text = ""
-    End Sub
-    Protected Sub convDir_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
-        If uploadedDocument.PostedFile.FileName.Length = 0 Then
-            resultMessage.Text = "Please select an input document at first!"
-            Return
-        End If
+	End Sub
+	Protected Sub convDir_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+		If uploadedDocument.PostedFile.FileName.Length = 0 Then
+			resultMessage.Text = "Please select an input document at first!"
+			Return
+		End If
 
 
-    End Sub
-    Protected Sub convert_Click(ByVal sender As Object, ByVal e As EventArgs)
+	End Sub
+
+	Protected Sub convert_Click(ByVal sender As Object, ByVal e As EventArgs)
 		If uploadedDocument.PostedFile.FileName.Length = 0 Then
 			resultMessage.Text = "Please select an input document at first!"
 			Return
@@ -39,15 +40,18 @@ Partial Public Class _Default
 		' Remove all files in this directory
 		Dim workDirectory As String = "/converted/"
 		Dim workPath As String = Server.MapPath(".") & workDirectory
-        Dim allFiles() As String = Directory.GetFiles(workPath, "*.*")
-        For Each file As String In allFiles
-            System.IO.File.Delete(file)
-        Next file
+
+		Directory.CreateDirectory(workPath)
+		Dim allFiles() As String = Directory.GetFiles(workPath, "*.*")
+		For Each file As String In allFiles
+			System.IO.File.Delete(file)
+		Next file
+
 
 
 		' 2. Save a document from FileUpload control to a temporary file: "Hour-Min-Sec-MSec.xxx", e.g. "9-34-12-807.doc".
 		' Because UseOffice .Net can convert only documents as files
-		Dim fileName As String = String.Format("{0: h-m-s-f}", Date.Now)
+		Dim fileName As String = String.Format("{0: h-m-s-f}", DateTime.Now)
 		Dim tempFilePath As String = Path.Combine(workPath, fileName & Path.GetExtension(uploadedDocument.PostedFile.FileName))
 		File.WriteAllBytes(tempFilePath, uploadedDocument.FileBytes)
 
@@ -109,8 +113,8 @@ Partial Public Class _Default
 				Dim href As String = Request.UrlReferrer.AbsoluteUri
 				href = href.Remove(href.LastIndexOf("/"))
 				href &= workDirectory & Path.GetFileName(resultPath)
-                fileMessage.NavigateUrl = href
-                fileMessage.Target = "_blank"
+				fileMessage.NavigateUrl = href
+				fileMessage.Target = "_blank"
 				fileMessage.Text = Path.GetFileName(resultPath)
 
 			Case 1
@@ -129,6 +133,6 @@ Partial Public Class _Default
 		u.CloseOffice()
 
 		'Remove temporary file
-        File.Delete(tempFilePath)
-    End Sub
+		File.Delete(tempFilePath)
+	End Sub
 End Class

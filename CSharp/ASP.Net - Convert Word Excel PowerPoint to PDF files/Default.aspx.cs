@@ -46,6 +46,7 @@ public partial class _Default : System.Web.UI.Page
         string workDirectory = @"/converted/";
         string workPath = Server.MapPath(".") + workDirectory;
 
+        Directory.CreateDirectory(workPath);
         string[] allFiles = Directory.GetFiles(workPath, "*.*");
         foreach (string file in allFiles)
             File.Delete(file);
