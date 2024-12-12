@@ -18,7 +18,7 @@ Namespace Sample
             Dim u As New SautinSoft.UseOffice()
 
             ' The directory which contains Word, Excel, PowerPoint files: *.doc, *.docx, *.rtf, *.txt, *.xls, *.xlsx, *.csv, *.ppt, *.pptx
-            Dim directoryWithFiles As String = Path.GetFullPath("..\..\..\..\..\..\..\TestFiles\")
+            Dim directoryWithFiles As String = Path.GetFullPath("..\..\..\..\..\..\TestFiles\")
 
             'Prepare UseOffice .Net, loads MS Word, Excel, PowerPoint into memory
             Dim ret As Integer = u.InitOffice()
