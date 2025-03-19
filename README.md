@@ -27,7 +27,7 @@ Support for all MS Office formats.
 ## System Requirement
 
 * .NET Framework 4.6.2 - 4.8
-* .NET 6, 8
+* .NET 6, 8, 9
 * Windows only
 
 ## Getting Started with UseOffice .Net
